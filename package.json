@@ -1,0 +1,16 @@
+{
+  "name": "it-supplies-management",
+  "version": "1.0.0",
+  "description": "IT Supplies Management Application",
+  "scripts": {
+    "install-all": "npm install && cd client && npm install && cd ../server && npm install",
+    "dev": "concurrently \"cd server && npm run dev\" \"cd client && npm start\"",
+    "test": "cd server && npm test && cd ../client && npm test"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  },
+  "dependencies": {
+    "csv-parser": "^3.2.0"
+  }
+}
